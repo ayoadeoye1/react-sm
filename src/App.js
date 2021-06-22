@@ -1,25 +1,29 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
+import Media from './Comp/media';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+  const [hey, setHey] = useState('react hook in progress');
+
+return(
+  <div className="background">
+      <center>
+      <h1 className="h1">sunlight tech</h1>
+      <div>
+        <div className="add">
+        <h2>
+          welcome to sunlight tech official page
+        </h2>
+        </div>
+        <div className="med">
+          <Media />
+        </div>
+        <p>{hey}</p>
+        <button onClick={() =>{ setHey(hey + ", you're welcome") }}>change</button>
+      </div>
+      </center>
     </div>
-  );
+)
 }
 
 export default App;

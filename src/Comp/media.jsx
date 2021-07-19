@@ -28,7 +28,7 @@ function subDown(e){
         <div>
             <h2 className="log">log-in</h2>
             <center>
-                <input ref = {firstName} onKeyDown={firstDown} className="mail" type="email" placeholder="Enter Your E-mail or Phone number" /><br />
+                <input ref ={firstName} onKeyDown={firstDown} className="mail" type="email" placeholder="Enter Your E-mail or Phone number" /><br />
                 <input ref={passRef} onKeyDown={passDown} className="password" type="password" placeholder="Enter Your Password" /><br />
                 <input ref={submitRef} onKeyDown={subDown} className="submit" type="submit" value="Log In" />
             </center>
